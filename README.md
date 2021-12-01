@@ -11,11 +11,11 @@ The EnableX help to the developer community to understand, How the Enablex Low-C
 # 1.Add  these  permission
 
 
-***  <uses-permission android:name="android.permission.CAMERA" />
- <uses-permission android:name="android.permission.INTERNET" /> 
- <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> 
- <uses-permission android:name="android.permission.RECORD_AUDIO" />
- <uses-permission android:name="android.permission.WAKE_LOCK" /> ***
+ <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+ <uses-permission android:name="android.permission.INTERNET"></uses-permission> 
+ <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"></uses-permission> 
+ <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+ <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission> 
 
 
 
