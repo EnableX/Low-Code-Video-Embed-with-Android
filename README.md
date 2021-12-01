@@ -6,9 +6,11 @@ Visit https://www.enablex.io/developer/video/low-code-video-embed/ to view the f
 Disclaimer
 The EnableX help to the developer community to understand, How the Enablex Low-Code-Video-Embed product can be implemented using webview in Android Native App( Java/kotlin).
 
-#How it works
+# How it works
 
 # 1.Add  these  permission
+
+
 <uses-permission android:name="android.permission.CAMERA"/>
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
