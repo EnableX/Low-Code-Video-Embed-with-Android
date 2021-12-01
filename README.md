@@ -10,6 +10,7 @@ The EnableX help to the developer community to understand, How the Enablex Low-C
 
 # 1.Add  these  permission
 
+<br />
 
 <uses-permission android:name="android.permission.CAMERA"/>
 <uses-permission android:name="android.permission.INTERNET"/>
@@ -17,11 +18,13 @@ The EnableX help to the developer community to understand, How the Enablex Low-C
 <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
+<br />
+
 #2.You need to use Webview class .Create custom WebChromeClient class and override onPermissionRequest method:
 
-import android.app.Activity;
-import android.webkit.PermissionRequest;
-import android.webkit.WebChromeClient;
+import android.app.Activity;<br />
+import android.webkit.PermissionRequest;<br />
+import android.webkit.WebChromeClient;<br />
 
 public class CustomWebChromeClient extends WebChromeClient {
 private Activity activity;
