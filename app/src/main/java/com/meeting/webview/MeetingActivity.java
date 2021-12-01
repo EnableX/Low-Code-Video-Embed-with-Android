@@ -6,11 +6,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,9 +41,7 @@ public class MeetingActivity  extends AppCompatActivity {
         super.onResume();
         if (this.webView.getUrl() == null) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && this.isPendingPermissions()) {
-                // This explicitly requests the camera and audio permissions.
-                // It's fine for a demo app but should probably be called earlier in the flow,
-                // on a user interaction instead of onResume.
+
                 this.requestCameraAndAudioPermissions();
             } else {
                 this.loadLowCodeRoomUrl();

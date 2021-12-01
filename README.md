@@ -18,45 +18,14 @@ The EnableX help to the developer community to understand, How the Enablex Low-C
 
 # 2.You need to use Webview class .Create custom WebChromeClient class and override onPermissionRequest method:
 
-import android.app.Activity;<br />
-import android.webkit.PermissionRequest;<br />
-import android.webkit.WebChromeClient;<br />
-
-public class CustomWebChromeClient extends WebChromeClient {
-private Activity activity;
-
-public CustomWebChromeClient(Activity parentActivity) {
-super();
-activity = parentActivity;
-}
-
-@Override
-public void onPermissionRequest(final PermissionRequest request) {<br />
-activity.runOnUiThread(() -> request.grant(request.getResources()));
-}
-}
+![GitHub Logo](/images/customchromeclient.png)
+Format: ![Alt Text](url)
 
 
 # 3.Create a WebUtils helper class to configure the WebView. Here is a possible configuration:
 
-import android.annotation.SuppressLint;<br />
-import android.webkit.CookieManager;<br />
-import android.webkit.WebSettings;<br />
-import android.webkit.WebView;<br />
-
-public class WebUtils {
-
-    @SuppressLint("SetJavaScriptEnabled")
-    public static void configureWebView(WebView webView) {
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        webSettings.setDomStorageEnabled(true);
-        webSettings.setDatabaseEnabled(true);
-        webSettings.setMediaPlaybackRequiresUserGesture(false);
-        CookieManager.getInstance().setAcceptCookie(true);
-        CookieManager.getInstance().setAcceptThirdPartyCookies(webView, true);
-    }
-}
+![GitHub Logo](/images/webUtils.png)
+Format: ![Alt Text](url)
 
 #4.Request the permissions if needed.
   Add the ?skipMediaPermissionPrompt parameter to the room URL and load it.
