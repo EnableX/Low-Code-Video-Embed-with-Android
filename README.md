@@ -27,7 +27,7 @@ Format: ![Alt Text](url)
 ![GitHub Logo](/images/webUtils.png)
 Format: ![Alt Text](url)
 
-#4.Request the permissions if needed.
+# 4.Request the permissions if needed.
   Add the ?skipMediaPermissionPrompt parameter to the room URL and load it.
   Here is an example:
 
