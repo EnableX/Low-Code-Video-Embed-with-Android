@@ -9,11 +9,11 @@ The EnableX help to the developer community to understand, How the Enablex Low-C
 #How it works
 
 # 1.Add  these  permission
-<uses-permission android:name="android.permission.CAMERA"></uses-permission>
-<uses-permission android:name="android.permission.INTERNET"></uses-permission>
-<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"></uses-permission>
-<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
-<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+<uses-permission android:name="android.permission.CAMERA"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+<uses-permission android:name="android.permission.WAKE_LOCK"/>
 
 #2.You need to use Webview class .Create custom WebChromeClient class and override onPermissionRequest method:
 
@@ -22,18 +22,19 @@ import android.webkit.PermissionRequest;
 import android.webkit.WebChromeClient;
 
 public class CustomWebChromeClient extends WebChromeClient {
-   private Activity activity;
+private Activity activity;
 
-   public CustomWebChromeClient(Activity parentActivity) {
-       super();
-       activity = parentActivity;
-   }
-
-   @Override
-   public void onPermissionRequest(final PermissionRequest request) {
-       activity.runOnUiThread(() -> request.grant(request.getResources()));
-   }
+public CustomWebChromeClient(Activity parentActivity) {
+super();
+activity = parentActivity;
 }
+
+@Override
+public void onPermissionRequest(final PermissionRequest request) {
+activity.runOnUiThread(() -> request.grant(request.getResources()));
+}
+}
+
 
 # 3.Create a WebUtils helper class to configure the WebView. Here is a possible configuration:
 
