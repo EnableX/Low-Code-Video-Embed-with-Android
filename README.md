@@ -1,6 +1,6 @@
 # Low-Code-Video-Embed-with-Android
 
-Documentation
+ # Documentation
 Visit https://www.enablex.io/developer/video/low-code-video-embed/ to view the full Low-Code-Video-Embed developer guide documentation and get started.
 
 Disclaimer
@@ -10,17 +10,17 @@ The EnableX help to the developer community to understand, How the Enablex Low-C
 
 # 1.Add  these  permission
 
-<br />
 
-<uses-permission android:name="android.permission.CAMERA"/>
-<uses-permission android:name="android.permission.INTERNET"/>
-<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
-<uses-permission android:name="android.permission.RECORD_AUDIO"/>
-<uses-permission android:name="android.permission.WAKE_LOCK"/>
+<br \><uses-permission android:name="android.permission.CAMERA" /> <br \>
+<uses-permission android:name="android.permission.INTERNET" /> <br \>
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> <br \>
+<uses-permission android:name="android.permission.RECORD_AUDIO" /><br \>
+<uses-permission android:name="android.permission.WAKE_LOCK" /><br \>
 
-<br />
 
-#2.You need to use Webview class .Create custom WebChromeClient class and override onPermissionRequest method:
+
+
+# 2.You need to use Webview class .Create custom WebChromeClient class and override onPermissionRequest method:
 
 import android.app.Activity;<br />
 import android.webkit.PermissionRequest;<br />
