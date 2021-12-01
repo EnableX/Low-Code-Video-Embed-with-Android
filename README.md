@@ -11,7 +11,7 @@ The EnableX help to the developer community to understand, How the Enablex Low-C
 # 1.Add  these  permission
 
 
-<br \><uses-permission android:name="android.permission.CAMERA" /> <br \>
+<uses-permission android:name="android.permission.CAMERA" /> <br \>
 <uses-permission android:name="android.permission.INTERNET" /> <br \>
 <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> <br \>
 <uses-permission android:name="android.permission.RECORD_AUDIO" /><br \>
