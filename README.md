@@ -35,7 +35,7 @@ activity = parentActivity;
 }
 
 @Override
-public void onPermissionRequest(final PermissionRequest request) {
+public void onPermissionRequest(final PermissionRequest request) {<br />
 activity.runOnUiThread(() -> request.grant(request.getResources()));
 }
 }
@@ -43,10 +43,10 @@ activity.runOnUiThread(() -> request.grant(request.getResources()));
 
 # 3.Create a WebUtils helper class to configure the WebView. Here is a possible configuration:
 
-import android.annotation.SuppressLint;
-import android.webkit.CookieManager;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
+import android.annotation.SuppressLint;<br />
+import android.webkit.CookieManager;<br />
+import android.webkit.WebSettings;<br />
+import android.webkit.WebView;<br />
 
 public class WebUtils {
 
@@ -65,21 +65,22 @@ public class WebUtils {
 #4.Request the permissions if needed.
   Add the ?skipMediaPermissionPrompt parameter to the room URL and load it.
   Here is an example:
-  package com.meeting.webview;
+
+  package com.meeting.webview;<br />
   
-  import android.Manifest;
-  import android.content.pm.PackageManager;
-  import android.os.Build;
-  import android.os.Bundle;
-  import android.webkit.WebView;
-  import android.webkit.WebViewClient;
+  import android.Manifest;<br />
+  import android.content.pm.PackageManager;<br />
+  import android.os.Build;<br />
+  import android.os.Bundle;<br />
+  import android.webkit.WebView;<br />
+  import android.webkit.WebViewClient;<br />
   
-  import androidx.annotation.NonNull;
-  import androidx.annotation.RequiresApi;
-  import androidx.appcompat.app.AppCompatActivity;
+  import androidx.annotation.NonNull;<br />
+  import androidx.annotation.RequiresApi;<br />
+  import androidx.appcompat.app.AppCompatActivity;<br />
   
-  import java.util.ArrayList;
-  import java.util.List;
+  import java.util.ArrayList;<br />
+  import java.util.List;<br />
   
   public class MeetingNew  extends AppCompatActivity {
   
