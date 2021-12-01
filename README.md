@@ -12,24 +12,24 @@ The EnableX help to the developer community to understand, How the Enablex Low-C
 
 
  ![GitHub Logo](/images/permission.png)
- Format: ![Alt Text](url)
+
 
 
 
 # 2.You need to use Webview class .Create custom WebChromeClient class and override onPermissionRequest method:
 
 ![GitHub Logo](/images/customchromeclient.png)
-Format: ![Alt Text](url)
+
 
 
 # 3.Create a WebUtils helper class to configure the WebView. Here is a possible configuration:
 
 ![GitHub Logo](/images/webUtils.png)
-Format: ![Alt Text](url)
+
 
 # 4.Request the permissions if needed.
-  Add the ?skipMediaPermissionPrompt parameter to the room URL and load it.
-  Here is an example:
+ ## Add the ?skipMediaPermissionPrompt parameter to the room URL and load it.
+ ##  Here is an example:
 
   package com.meeting.webview;<br />
   
