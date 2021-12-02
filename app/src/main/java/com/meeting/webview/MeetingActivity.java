@@ -44,12 +44,12 @@ public class MeetingActivity  extends AppCompatActivity {
 
                 this.requestCameraAndAudioPermissions();
             } else {
-                this.loadLowCodeRoomUrl();
+                this.loadLowCodeEmbedRoomUrl();
             }
         }
     }
 
-    private void loadLowCodeRoomUrl() {
+    private void loadLowCodeEmbedRoomUrl() {
         this.webView.loadUrl(roomUrl+ roomParameters);
     }
 
@@ -61,7 +61,7 @@ public class MeetingActivity  extends AppCompatActivity {
                     // Show some permissions required dialog.
                 } else {
                     // All necessary permissions granted, continue loading.
-                    this.loadLowCodeRoomUrl();
+                    this.loadLowCodeEmbedRoomUrl();
                 }
                 break;
             default:

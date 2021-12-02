@@ -1,5 +1,10 @@
 # Low-Code-Video-Embed-with-Android
 
+EnableX Video Embed is an easy-to-use Video Calling API loaded with powerful conferencing, collaborative, and reporting features. You can build one-to-one or multiparty video meetings for any application or browser within minutes using its simple yet powerful REST API.
+
+You do not need client-side SDKs to develop an engaging UI layout for a video meeting application. Just select our pre-built UI or you can also design it with the EnableX App Visual Builder, and you can go live within minutes with your fully-functional video meeting application.
+
+
  # Documentation
 Visit https://www.enablex.io/developer/video/low-code-video-embed/ to view the full Low-Code-Video-Embed developer guide documentation and get started.
 
@@ -30,6 +35,10 @@ The enableX help to the developer community to understand, How the enablex Low-C
 
 # 4.Request the permissions if needed.
  ## Add the ?skipMediaPermissionPrompt parameter to the room URL and load it.
+
+   "low code embed url"?skipMediaPermissionPrompt
+ # Like
+[TEXT TO SHOW]("https://www.google.co.in/"+"?skipMediaPermissionPrompt")
  
   
 
