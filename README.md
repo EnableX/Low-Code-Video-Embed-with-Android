@@ -38,7 +38,7 @@ The enableX help to the developer community to understand, How the enablex Low-C
 
    "low code embed url"?skipMediaPermissionPrompt
  # Like
-[TEXT TO SHOW]("https://www.google.co.in/"+"?skipMediaPermissionPrompt")
+[https://www.google.co.in?skipMediaPermissionPrompt]
  
   
 
