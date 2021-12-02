@@ -41,6 +41,7 @@ The enableX help to the developer community to understand, How the enablex Low-C
 [https://www.google.co.in?skipMediaPermissionPrompt]
 
 
+# Screenshots
 
 ![GitHub Logo](/images/initial_page.jpg)
 
