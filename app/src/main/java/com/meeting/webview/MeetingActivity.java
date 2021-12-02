@@ -14,7 +14,7 @@ import java.util.List;
 
 public class MeetingActivity  extends AppCompatActivity {
 
-    public String roomUrl = ""; // Replace by your own
+    public String roomUrl = "https://new.yourvideo.live/617bab415dae7262c0aca609"; // Replace by your own
     private String roomParameters = "?skipMediaPermissionPrompt";
 
     private static final int PERMISSION_REQUEST_CODE = 1;
