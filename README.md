@@ -37,8 +37,6 @@ The enableX help to the developer community to understand, How the enablex Low-C
  ## Add the ?skipMediaPermissionPrompt parameter to the room URL and load it.
 
    "low code embed url"?skipMediaPermissionPrompt
- # Like
-[https://www.google.co.in?skipMediaPermissionPrompt]
 
 
 # Screenshots
